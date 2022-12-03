@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root {
+    /* Primary Colours */
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral Colours */
+    --mainbkgd: hsl(217, 54%, 11%);
+    --cardbkgd: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--mainbkgd);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Body Settings */
+
+.nft-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cardbkgd);
+    border-radius: 25px;
+    max-width: 350px;
+}
+
+.nft-image {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.nft-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.nft-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.nft-text h1 {
+    font-size: 24px;
+    color: var(--white);
+    margin: 10px 0;
+}
+
+.nft-text p {
+    color: hsl(220, 15%, 55%);
+}
+
+.flex-row {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.eth {
+    color: var(--Cyan);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.time {
+    color: var(--Softblue);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#time-icon {
+    margin-left: 50px;
+}
+
+.card-creator {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+}
+
+.card-creator p {
+  color: var(--Softblue);
+  font-size: 16px;
+}
+
+#selfie {
+  max-width: 33px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.attribution { 
+    color: var(--white);
+    padding-top: 15px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--white);
+}
